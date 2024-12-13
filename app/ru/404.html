@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.min.css">
+
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Страница не найдена | The Palm Beach Tower</title>
+
+  <style>
+    body {
+      overflow-x: visible;
+    }
+
+    .intro__buttons {
+      margin-top: 50px;
+    }
+
+    .button-consult {
+      color: #597cb4;
+      font-size: 40px;
+      text-decoration: underline;
+    }
+
+    .intro__left {
+      margin-top: 50px;
+    }
+
+    .intro__right {
+      position: relative;
+    }
+
+    .intro__descr {
+      font-size: 26px;
+    }
+
+    .intro__right-img {
+      opacity: .20;
+    }
+
+    .intro__buttons-consult {
+      margin-right: 0;
+      width: auto;
+    }
+
+    .intro__right span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 180px;
+      color: #597cb4;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      border: 5px solid #597cb4;
+      border-radius: 50%;
+      width: 380px;
+      height: 380px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .intro__right span {
+        font-size: 120px;
+        width: 280px;
+        height: 280px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .intro {
+        position: relative;
+        align-items: flex-start;
+      }
+
+      .intro__right {
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 420px;
+      }
+
+      .intro__right span {
+        opacity: .25;
+        font-size: 120px;
+        width: 320px;
+        height: 320px;
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      .intro__right-img {
+        display: none;
+      }
+
+      .intro__left {
+        margin-top: 0;
+      }
+
+      .intro__right {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+      }
+
+      .intro__right span {
+        border: none;
+        font-size: 260px;
+        opacity: .15;
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .intro__right span {
+        font-size: 190px;
+      }
+
+      .intro__buttons {
+        margin-top: 35px;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .intro__descr {
+        font-size: 22px;
+        line-height: 1.2;
+      }
+
+      .intro__title {
+        font-size: 60px;
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      .intro__right span {
+        font-size: 180px;
+      }
+
+      .button-consult {
+        font-size: 36px;
+      }
+    }
+
+    @media screen and (max-width: 320px) {
+      .intro__right span {
+        font-size: 160px;
+      }
+
+      .intro__title {
+        font-size: 52px;
+      }
+
+      .intro__descr {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header">
+        <img src="../images/logo-dark.png" alt="Metropolitan Premium Properties" class="header__logo" width="210">
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section-intro">
+      <div class="container">
+        <div class="intro">
+
+          <div class="intro__left">
+            <div class="intro__title">Palm beach tower 3</div>
+            <p class="intro__descr">Извините, этой страницы не существует</p>
+
+            <div class="intro__buttons">
+              <div class="intro__buttons-consult">
+                <a href="./" class="button-consult">На главную</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="intro__right">
+            <img src="../images/intro/bg.jpg" alt="Palm Beach" class="intro__right-img" width="560" height="635">
+            <span>404</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

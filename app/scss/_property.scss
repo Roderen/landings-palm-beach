@@ -1,0 +1,49 @@
+.section-property {
+  margin-top: 150px;
+}
+
+.property {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include _768 {
+    flex-direction: column;
+  }
+}
+
+.property__info {
+  max-width: 700px;
+
+  @include _768 {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}
+
+.property__descr {
+  margin-top: 40px;
+
+  strong {
+    color: #597cb4;
+    font-size: 45px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    display: block;
+
+    @include _560 {
+      font-size: 34px;
+    }
+  }
+
+  p {
+    max-width: 500px;
+    margin-top: 20px;
+    color: #303030;
+    font-size: 16px;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.50;
+    font-weight: 400;
+  }
+}

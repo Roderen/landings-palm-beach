@@ -1,0 +1,136 @@
+.section0-offering {
+  margin-top: 150px;
+}
+
+.offering {}
+
+.offering__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include _768 {
+    flex-direction: column;
+  }
+}
+
+.offering__text {
+  max-width: 670px;
+
+  @include _768 {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}
+
+.offering__descr {
+  margin-top: 30px;
+  color: #303030;
+  font-size: 16px;
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.50;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include _430 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p:first-child {
+    max-width: 365px;
+
+    @include _430 {
+      max-width: 100%;
+    }
+  }
+
+  p:last-child {
+    max-width: 270px;
+    
+    @include _430 {
+      max-width: 100%;
+    }
+  }
+}
+
+.offering__gallery {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 700px));
+  grid-auto-rows: 100px;
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+
+  @include _1024 {
+    grid-template-columns: repeat(3, minmax(275px, 565px));
+  }
+
+  @include _768 {
+    grid-template-columns: repeat(auto-fill, 235px);
+    grid-auto-rows: 50px;
+  }
+
+  @include _560 {
+    grid-template-columns: repeat(auto-fill, 175px);
+    grid-auto-rows: 40px;
+    grid-gap: 10px;
+  }
+
+  @include _430 {
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+  }
+}
+
+.offering__gallery-img {
+  width: 100%;
+
+  img {
+    vertical-align: middle;
+    object-fit: cover;
+
+    @include _1024 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &:nth-child(1) {
+    grid-area: 1 / 1 / 7 / 2;
+
+    @include _1024 {
+      grid-area: 1 / 1 / 6 / 2;
+    }
+
+    @include _430 {
+      grid-area: 1 / 1 / 6 / 5;
+    }
+  }
+
+  &:nth-child(2) {
+    grid-area: 1 / 2 / 5 / 4;
+
+    @include _430 {
+      grid-area: 1 / 5 / 6 / 11;
+    }
+  }
+
+  &:nth-child(3) {
+    grid-area: 5 / 2 / 9 / 3;
+
+    @include _430 {
+      grid-area: 6 / 1 / 11 / 6;
+    }
+  }
+
+  &:nth-child(4) {
+    grid-area: 5 / 3 / 10 / 4;
+
+    @include _430 {
+      grid-area: 6 / 6 / 13 / 11;
+    }
+  }
+}

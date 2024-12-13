@@ -1,0 +1,75 @@
+.section-brochure {
+  margin-top: 150px;
+}
+
+.brochure {
+  position: relative;
+  background-color: #2961ba;
+  padding: 40px 50px;
+
+  @include _430 {
+    padding: 40px 30px;
+  }
+}
+
+.brochure__title {
+  color: #ffffff;
+  font-size: 60px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+
+  @include _560 {
+    font-size: 40px;
+  }
+}
+
+.brochure__form {
+  margin-top: 40px;
+  max-width: 430px;
+
+  @include _1024 {
+    max-width: 350px;
+  }
+
+  @include _560 {
+    max-width: 100%;
+  }
+}
+
+.brochure__form-container {}
+
+.brochure__form-input {}
+
+.brochure__form-label {}
+
+.brochure__form-button {
+  color: #2961ba;
+
+  @include _430 {
+    width: 100%;
+  }
+}
+
+.brochure__img-note {
+  position: absolute;
+  top: 0;
+  right: -200px;
+
+  @include _1024 {
+    top: 110px;
+    right: -100px;
+    width: 650px;
+    height: 450px;
+  }
+
+  @include _768 {
+    top: 140px;
+    right: -100px;
+    width: 400px;
+    height: 300px;
+  }
+
+  @include _560 {
+    display: none;
+  }
+}
